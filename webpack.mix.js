@@ -17,6 +17,6 @@ let compressed = {
     }
 };
 
-mix.sass('resource/sass/app.scss', 'public/assets/css', compressed);
+mix.sass('resources/sass/app.scss', 'public/assets/css', compressed);
 
-mix.js('resource/js/home/welcome.js', 'public/assets/js/welcome.js');
+mix.js('resources/js/home/welcome.js', 'public/assets/js/welcome.js');

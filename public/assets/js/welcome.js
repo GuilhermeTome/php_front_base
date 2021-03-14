@@ -3792,10 +3792,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./resource/js/app.js":
-/*!****************************!*\
-  !*** ./resource/js/app.js ***!
-  \****************************/
+/***/ "./resources/js/app.js":
+/*!*****************************!*\
+  !*** ./resources/js/app.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3807,10 +3807,10 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
 
 /***/ }),
 
-/***/ "./resource/js/helpers/helper_storage.js":
-/*!***********************************************!*\
-  !*** ./resource/js/helpers/helper_storage.js ***!
-  \***********************************************/
+/***/ "./resources/js/helpers/helper_storage.js":
+/*!************************************************!*\
+  !*** ./resources/js/helpers/helper_storage.js ***!
+  \************************************************/
 /***/ (() => {
 
 var update = function update(key, data) {
@@ -3848,22 +3848,22 @@ window.storage = {
 
 /***/ }),
 
-/***/ "./resource/js/home/welcome.js":
-/*!*************************************!*\
-  !*** ./resource/js/home/welcome.js ***!
-  \*************************************/
+/***/ "./resources/js/home/welcome.js":
+/*!**************************************!*\
+  !*** ./resources/js/home/welcome.js ***!
+  \**************************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__(/*! ../app */ "./resource/js/app.js");
+__webpack_require__(/*! ../app */ "./resources/js/app.js");
 
-__webpack_require__(/*! ../helpers/helper_storage */ "./resource/js/helpers/helper_storage.js");
+__webpack_require__(/*! ../helpers/helper_storage */ "./resources/js/helpers/helper_storage.js");
 
 /***/ }),
 
-/***/ "./resource/sass/app.scss":
-/*!********************************!*\
-  !*** ./resource/sass/app.scss ***!
-  \********************************/
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -4224,8 +4224,8 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["public/assets/css/app"], () => (__webpack_require__("./resource/js/home/welcome.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/assets/css/app"], () => (__webpack_require__("./resource/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["public/assets/css/app"], () => (__webpack_require__("./resources/js/home/welcome.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["public/assets/css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
