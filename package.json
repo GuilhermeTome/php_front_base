@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "dev": "npx mix",
+    "watch": "npx mix watch",
+    "prod": "npx mix --production"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GuilhermeTome/php_front_base.git"
@@ -22,6 +27,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
-    "alpinejs": "^2.8.1"
+    "alpinejs": "^2.8.1",
+    "axios": "^0.21.1"
   }
 }

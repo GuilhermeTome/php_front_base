@@ -11,6 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sass('resource/sass/app.scss', 'public/assets/css').sourceMaps();
+let compressed = {
+    sassOptions: {
+        outputStyle: 'compressed'
+    }
+};
+
+mix.sass('resource/sass/app.scss', 'public/assets/css', compressed);
 
 mix.js('resource/js/home/welcome.js', 'public/assets/js/welcome.js');
