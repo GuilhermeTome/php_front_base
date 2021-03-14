@@ -1,0 +1,35 @@
+@import 'variables';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body, main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: $background;
+}
+
+.welcome-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.welcome-section h1 {
+  font-size: 48px;
+  color: $black;
+}
+
+.welcome-section i {
+  font-size: 40px;
+  color: $yellow;
+}

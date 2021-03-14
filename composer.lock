@@ -4,340 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a31db3e55164842d4ca14cef9b5f1ded",
+    "content-hash": "4fe223213a7aefcd2936ffbe76d65c0c",
     "packages": [
         {
-            "name": "catfan/medoo",
-            "version": "v1.7.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/catfan/Medoo.git",
-                "reference": "2d675f73e23f63bbaeb9a8aa33318659a3d3c32f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/catfan/Medoo/zipball/2d675f73e23f63bbaeb9a8aa33318659a3d3c32f",
-                "reference": "2d675f73e23f63bbaeb9a8aa33318659a3d3c32f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pdo": "*",
-                "php": ">=5.4"
-            },
-            "suggest": {
-                "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
-                "ext-pdo_mysql": "For MySQL or MariaDB database",
-                "ext-pdo_oci": "For Oracle database",
-                "ext-pdo_oci8": "For Oracle version 8 database",
-                "ext-pdo_pqsql": "For PostgreSQL database",
-                "ext-pdo_sqlite": "For SQLite database",
-                "ext-pdo_sqlsrv": "For MSSQL database on both Window/Liunx platform"
-            },
-            "type": "framework",
-            "autoload": {
-                "psr-4": {
-                    "Medoo\\": "/src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Angel Lai",
-                    "email": "angel@catfan.me"
-                }
-            ],
-            "description": "The lightweight PHP database framework to accelerate development",
-            "homepage": "https://medoo.in",
-            "keywords": [
-                "database",
-                "database library",
-                "lightweight",
-                "mariadb",
-                "mssql",
-                "mysql",
-                "oracle",
-                "php framework",
-                "postgresql",
-                "sql",
-                "sqlite"
-            ],
-            "support": {
-                "issues": "https://github.com/catfan/Medoo/issues",
-                "source": "https://github.com/catfan/Medoo"
-            },
-            "time": "2020-02-11T08:20:42+00:00"
-        },
-        {
-            "name": "jbzoo/data",
-            "version": "4.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JBZoo/Data.git",
-                "reference": "e9320145035a406dc0ed978438e67e580287d8c5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/JBZoo/Data/zipball/e9320145035a406dc0ed978438e67e580287d8c5",
-                "reference": "e9320145035a406dc0ed978438e67e580287d8c5",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "jbzoo/toolbox-dev": "^2.4.3",
-                "jbzoo/utils": "^4.2.1",
-                "symfony/yaml": "^4.4||^5.0",
-                "vimeo/psalm": "^3.14.1"
-            },
-            "suggest": {
-                "jbzoo/utils": ">=4.2.1",
-                "symfony/yaml": ">=4.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
-                "psr-4": {
-                    "JBZoo\\Data\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Smetannikov",
-                    "email": "admin@jbzoo.com",
-                    "role": "lead"
-                }
-            ],
-            "description": "An extended version of the ArrayObject object for working with system settings or just for working with data arrays",
-            "keywords": [
-                "array",
-                "arrayobject",
-                "config",
-                "data",
-                "ini",
-                "json",
-                "params",
-                "yml"
-            ],
-            "support": {
-                "issues": "https://github.com/JBZoo/Data/issues",
-                "source": "https://github.com/JBZoo/Data/tree/4.1.2"
-            },
-            "time": "2020-08-18T10:16:45+00:00"
-        },
-        {
-            "name": "jbzoo/image",
-            "version": "5.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JBZoo/Image.git",
-                "reference": "9322e7cc482c290ea242ebb194ca95a5c5aa794e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/JBZoo/Image/zipball/9322e7cc482c290ea242ebb194ca95a5c5aa794e",
-                "reference": "9322e7cc482c290ea242ebb194ca95a5c5aa794e",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-exif": "*",
-                "ext-gd": "*",
-                "jbzoo/data": "^4.0.1",
-                "jbzoo/utils": "^4.2.1",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "jbzoo/toolbox-dev": "^2.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "JBZoo\\Image\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Smetannikov",
-                    "email": "admin@jbzoo.com",
-                    "role": "lead"
-                },
-                {
-                    "name": "Cory LaViska",
-                    "homepage": "http://www.abeautifulsite.net/",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Nazar Mokrynskyi",
-                    "email": "nazar@mokrynskyi.com",
-                    "homepage": "http://cleverstyle.org/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A PHP class that simplifies working with images",
-            "keywords": [
-                "crop",
-                "filters",
-                "gd",
-                "image",
-                "images",
-                "jbzoo",
-                "resize",
-                "thumbnail",
-                "watermark"
-            ],
-            "support": {
-                "issues": "https://github.com/JBZoo/Image/issues",
-                "source": "https://github.com/JBZoo/Image/tree/master"
-            },
-            "time": "2020-07-31T18:01:36+00:00"
-        },
-        {
-            "name": "jbzoo/utils",
-            "version": "4.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JBZoo/Utils.git",
-                "reference": "fada4fb9cbfec475976fa0ef8116a85ecbb43804"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/JBZoo/Utils/zipball/fada4fb9cbfec475976fa0ef8116a85ecbb43804",
-                "reference": "fada4fb9cbfec475976fa0ef8116a85ecbb43804",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-filter": "*",
-                "ext-gd": "*",
-                "ext-mbstring": "*",
-                "ext-posix": "*",
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "jbzoo/data": "^4.1.2",
-                "jbzoo/toolbox-dev": "^2.5.0",
-                "symfony/polyfill-mbstring": "^1.18.1",
-                "symfony/process": "^4.4|^5.0"
-            },
-            "suggest": {
-                "ext-intl": "*",
-                "ext-mbstring": "Provides multibyte specific string functions",
-                "jbzoo/data": ">=4.0",
-                "symfony/polyfill-mbstring": "For UTF-8 if ext-mbstring disabled",
-                "symfony/process": "For Cli::exec() method only"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/defines.php",
-                    "src/aliases.php"
-                ],
-                "psr-4": {
-                    "JBZoo\\Utils\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Denis Smetannikov",
-                    "email": "admin@jbzoo.com",
-                    "role": "lead"
-                },
-                {
-                    "name": "Brandon Wamboldt",
-                    "email": "brandon.wamboldt@gmail.com"
-                },
-                {
-                    "name": "Luís Nóbrega",
-                    "email": "luis.barros.nobrega@gmail.com"
-                }
-            ],
-            "description": "Collection of PHP functions, mini classes and snippets for everyday developer's routine life.",
-            "keywords": [
-                "array",
-                "cli",
-                "collection",
-                "command line",
-                "dates",
-                "email",
-                "env",
-                "environment",
-                "filesystem",
-                "filter",
-                "helper",
-                "helpers",
-                "http",
-                "image",
-                "mbstring",
-                "misc",
-                "serialize",
-                "slugify",
-                "string",
-                "timer",
-                "url",
-                "utility",
-                "utils"
-            ],
-            "support": {
-                "issues": "https://github.com/JBZoo/Utils/issues",
-                "source": "https://github.com/JBZoo/Utils/tree/4.2.2"
-            },
-            "time": "2020-09-20T19:16:52+00:00"
-        },
-        {
             "name": "league/plates",
-            "version": "3.3.0",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/plates.git",
-                "reference": "b1684b6f127714497a0ef927ce42c0b44b45a8af"
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/plates/zipball/b1684b6f127714497a0ef927ce42c0b44b45a8af",
-                "reference": "b1684b6f127714497a0ef927ce42c0b44b45a8af",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/6d3ee31199b536a4e003b34a356ca20f6f75496a",
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3 | ^7.0"
+                "php": "^7.0|^8.0"
             },
             "require-dev": {
-                "mikey179/vfsstream": "^1.4",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~1.5"
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
             "extra": {
@@ -359,10 +48,15 @@
                     "name": "Jonathan Reinink",
                     "email": "jonathan@reinink.ca",
                     "role": "Developer"
+                },
+                {
+                    "name": "RJ Garcia",
+                    "email": "ragboyjr@icloud.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
-            "homepage": "http://platesphp.com",
+            "homepage": "https://platesphp.com",
             "keywords": [
                 "league",
                 "package",
@@ -372,9 +66,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/plates/issues",
-                "source": "https://github.com/thephpleague/plates/tree/master"
+                "source": "https://github.com/thephpleague/plates/tree/v3.4.0"
             },
-            "time": "2016-12-28T00:14:17+00:00"
+            "time": "2020-12-25T05:00:37+00:00"
         },
         {
             "name": "opis/closure",
@@ -503,16 +197,16 @@
         },
         {
             "name": "php-di/invoker",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/Invoker.git",
-                "reference": "e08a7c87068daeaeef464b95d81643ea530bc535"
+                "reference": "992fec6c56f2d1ad1ad5fee28267867c85bfb8f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/Invoker/zipball/e08a7c87068daeaeef464b95d81643ea530bc535",
-                "reference": "e08a7c87068daeaeef464b95d81643ea530bc535",
+                "url": "https://api.github.com/repos/PHP-DI/Invoker/zipball/992fec6c56f2d1ad1ad5fee28267867c85bfb8f9",
+                "reference": "992fec6c56f2d1ad1ad5fee28267867c85bfb8f9",
                 "shasum": ""
             },
             "require": {
@@ -546,7 +240,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-DI/Invoker/issues",
-                "source": "https://github.com/PHP-DI/Invoker/tree/2.2.0"
+                "source": "https://github.com/PHP-DI/Invoker/tree/2.3.0"
             },
             "funding": [
                 {
@@ -554,7 +248,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-12T12:15:50+00:00"
+            "time": "2021-01-15T10:25:40+00:00"
         },
         {
             "name": "php-di/php-di",
@@ -676,27 +370,22 @@
         },
         {
             "name": "psr/container",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -709,7 +398,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common Container Interface (PHP FIG PSR-11)",
@@ -723,9 +412,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/master"
+                "source": "https://github.com/php-fig/container/tree/1.1.1"
             },
-            "time": "2017-02-14T16:28:37+00:00"
+            "time": "2021-03-05T17:36:06+00:00"
         }
     ],
     "packages-dev": [],

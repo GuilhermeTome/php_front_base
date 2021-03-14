@@ -1,6 +1,14 @@
 <?php $this->layout('layouts/app', ['title' => 'Home']) ?>
+
 <?php $this->start('main') ?>
-    <div class="jumbotron">
-        <h1 class="text-primary">Home</h1>
-    </div>
+
+<section x-data="{title: 'Página inicial'}" class="welcome-section">
+    <h1 x-text="title"></h1>
+    <i class="far fa-smile-wink"></i>
+</section>
+
+<?php $this->stop() ?>
+
+<?php $this->start('scripts') ?>
+<script src="<?= asset('js/welcome.js') ?>"></script>
 <?php $this->stop() ?>
