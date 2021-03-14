@@ -1,0 +1,33 @@
+{
+    "name": "guilherme/mini-framework",
+    "description": "",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Tome",
+            "email": "guigo.reis90@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4.0",
+        "pecee/simple-router": "4.2.0.6",
+        "league/plates": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "files": [
+            "configurations.php",
+            "src/General.php",
+            "routes/web.php",
+            "routes/error.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "disable-tls": false
+    }
+}

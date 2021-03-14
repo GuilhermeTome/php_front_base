@@ -1,0 +1,17 @@
+# folders
+/vendor/
+.vscode
+node_modules
+
+# files
+.DS_Store
+
+#cache
+/cache/*
+!cache/.gitkeep
+
+#uploads
+
+#environment
+.env
+configurations.php

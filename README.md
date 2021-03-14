@@ -1,1 +1,1 @@
-# php_front_base
+# mini-framework

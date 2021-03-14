@@ -1,0 +1,70 @@
+<?php
+
+use Pecee\SimpleRouter\SimpleRouter as Router;
+use Pecee\Http\Url;
+use Pecee\Http\Response;
+use Pecee\Http\Request;
+
+/**
+ * Get url for a route by using either name/alias, class or method name.
+ *
+ * The name parameter supports the following values:
+ * - Route name
+ * - Controller/resource name (with or without method)
+ * - Controller class name
+ *
+ * When searching for controller/resource by name, you can use this syntax "route.name@method".
+ * You can also use the same syntax when searching for a specific controller-class "MyController@home".
+ * If no arguments is specified, it will return the url for the current loaded route.
+ *
+ * @param string|null $name
+ * @param string|array|null $parameters
+ * @param array|null $getParams
+ * @return \Pecee\Http\Url
+ * @throws \InvalidArgumentException
+ */
+function url(
+    ?string $name = null,
+    $parameters = null,
+    ?array $getParams = null
+): Url {
+    return Router::getUrl($name, $parameters, $getParams);
+}
+
+/**
+ * @return \Pecee\Http\Response
+ */
+function response(): Response
+{
+    return Router::response();
+}
+
+/**
+ * @return \Pecee\Http\Request
+ */
+function request(): Request
+{
+    return Router::request();
+}
+
+/**
+ * @param string $url
+ * @param int|null $code
+ */
+function redirect(string $url, ?int $code = null): void
+{
+    if ($code !== null) {
+        response()->httpCode($code);
+    }
+
+    response()->redirect($url);
+}
+
+/**
+ * @param string $url
+ * @return string
+ */
+function asset(string $url = ''): string
+{
+    return HTTP_PROTOCOL . url()->getHost() . url('assets') . $url;
+}
