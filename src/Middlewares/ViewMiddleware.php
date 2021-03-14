@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\App;
+namespace Middlewares;
 
 use League\Plates\Engine;
 use Pecee\Http\Middleware\IMiddleware;
 use Pecee\Http\Request;
 
-class Middleware implements IMiddleware
+class ViewMiddleware implements IMiddleware
 {
     public function handle(Request $request): void
     {

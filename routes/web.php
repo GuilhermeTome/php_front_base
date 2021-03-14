@@ -17,9 +17,9 @@ use Pecee\SimpleRouter\SimpleRouter;
  * App routes
  */
 SimpleRouter::group([
-    'middleware' => Modules\App\Middleware::class,
+    'middleware' => Middlewares\ViewMiddleware::class,
     'prefix' => '/',
-    'namespace' => 'Modules\App\Home\Controllers',
+    'namespace' => 'Controllers\User',
 ], function () {
     SimpleRouter::get('/', 'HomeController@index')->name('App');
 });

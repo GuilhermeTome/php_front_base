@@ -1,4 +1,8 @@
-<?php $this->layout('layouts/app', ['title' => 'Home']) ?>
+<?php
+$this->layout('layouts/app', [
+    'seo' => $seo
+]);
+?>
 
 <?php $this->start('main') ?>
 
