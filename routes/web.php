@@ -22,4 +22,5 @@ SimpleRouter::group([
     'namespace' => 'Controllers\User',
 ], function () {
     SimpleRouter::get('/', 'HomeController@index')->name('App');
+    SimpleRouter::get('/ip', 'TestsController@index')->name('AppTests');
 });

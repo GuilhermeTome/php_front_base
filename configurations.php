@@ -9,7 +9,7 @@ define('PATH_ROOT', __DIR__ . DS);
 define('PATH_PUBLIC', PATH_ROOT . 'public' . DS);
 define('PATH_UPLOAD', PATH_PUBLIC . 'uploads' . DS);
 
-define('PATH_RESOURCE', PATH_ROOT . 'resource' . DS);
+define('PATH_RESOURCE', PATH_ROOT . 'resources' . DS);
 define('PATH_CACHE', PATH_ROOT . 'cache' . DS);
 define('PATH_ROUTE', PATH_ROOT . 'routes' . DS);
 

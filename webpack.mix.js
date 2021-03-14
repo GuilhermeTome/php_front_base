@@ -19,4 +19,5 @@ let compressed = {
 
 mix.sass('resources/sass/app.scss', 'public/assets/css', compressed);
 
-mix.js('resources/js/home/welcome.js', 'public/assets/js/welcome.js');
+mix.js('resources/js/home/welcome.js', 'public/assets/js/welcome.js').vue({ version: 2 });;
+mix.js('resources/js/tests/api.js', 'public/assets/js/api.js').vue({ version: 2 });;
