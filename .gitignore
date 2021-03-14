@@ -9,9 +9,3 @@ node_modules
 #cache
 /cache/*
 !cache/.gitkeep
-
-#uploads
-
-#environment
-.env
-configurations.php
